@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hdf"
+    tools:context="com.findmyworld2k15gmail.callautoanswerrecorder.MENU"
+    android:id="@+id/mainpage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTER TIME IN SECOND"
+            android:id="@+id/tv1"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/settime"
+            android:layout_below="@+id/tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="10" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/buttion"
+            android:text="SET MESSAGE"
+            android:id="@+id/sm"
+            android:layout_below="@+id/settime"
+            android:layout_marginTop="14dp"
+            android:layout_alignRight="@+id/tv1"
+            android:layout_alignEnd="@+id/tv1"
+            android:layout_alignLeft="@+id/tv1"
+            android:layout_alignStart="@+id/tv1"
+            android:clickable="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/buttion"
+            android:text="VOICEMAIL BOX"
+            android:id="@+id/vm"
+            android:layout_below="@+id/settime"
+            android:layout_marginTop="94dp"
+            android:layout_alignRight="@+id/tv1"
+            android:layout_alignEnd="@+id/tv1"
+            android:layout_alignLeft="@+id/tv1"
+            android:layout_alignStart="@+id/tv1"
+            android:clickable="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/buttion"
+            android:text="START SERVICE"
+            android:id="@+id/ban"
+            android:layout_below="@+id/settime"
+            android:layout_marginTop="174dp"
+            android:layout_alignRight="@+id/tv1"
+            android:layout_alignEnd="@+id/tv1"
+            android:layout_alignLeft="@+id/tv1"
+            android:layout_alignStart="@+id/tv1"
+            android:clickable="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/buttion"
+            android:text="STOP SERVICE"
+            android:id="@+id/bss"
+            android:layout_below="@+id/settime"
+            android:layout_marginTop="254dp"
+            android:layout_alignRight="@+id/tv1"
+            android:layout_alignEnd="@+id/tv1"
+            android:layout_alignLeft="@+id/tv1"
+            android:layout_alignStart="@+id/tv1"
+            android:clickable="true"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+
+
+    </RelativeLayout>
+    </LinearLayout><!-- From: file:/home/snehasish/AndroidStudioProjects/CallAutoAnswerRecorder/app/src/main/res/layout-normal/activity_menu.xml -->
